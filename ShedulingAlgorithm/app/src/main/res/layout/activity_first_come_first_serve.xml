@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FirstComeFirstServe"
+    tools:visibility="visible">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="First Come First Serve Algorithm"
+                android:textColor="#000000"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="FCFS is a non-preemptive algorithm, meaning that once a process starts executing, it continues until it finishes, without interruption or preemption by other processes. It is a simple and intuitive scheduling approach, where the execution order is based solely on the order of arrival."
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="For Calculations please enter apropriate values."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Note: You can only solve upto 12 processes in this calculator."
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Enter the number of processes : -"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/nofprocesses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/outline"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/outline"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Process Name"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Arrival Time"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Burst Time"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/p1"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/a1"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/b1"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/p2"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/a2"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/b2"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/p3"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/a3"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/b3"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/p4"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/a4"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/b4"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/p5"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/a5"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/b5"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/p6"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/a6"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/b6"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/p7"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/a7"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/b7"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/p8"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/a8"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/b8"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/p9"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/a9"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/b9"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/p10"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/a10"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/b10"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/p11"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/a11"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/b11"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/p12"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/a12"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/b12"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:background="@drawable/outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+            </TableLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/solve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solve" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
