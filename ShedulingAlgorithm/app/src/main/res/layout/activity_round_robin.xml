@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/material_dynamic_neutral99"
     tools:context=".FirstComeFirstServe"
     tools:visibility="visible">
 
@@ -22,10 +23,13 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/material_dynamic_neutral90"
                 android:padding="5dp"
-                android:text="Round Robin Scheduling Algorithm"
+                android:text="Round Robin \nAlgorithm"
+                android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView3"
