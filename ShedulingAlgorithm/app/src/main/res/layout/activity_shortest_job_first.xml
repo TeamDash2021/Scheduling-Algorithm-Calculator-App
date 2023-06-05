@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ShortestJobFirst"
+    android:background="@color/material_dynamic_neutral99"
+    tools:context=".FirstComeFirstServe"
     tools:visibility="visible">
 
 
@@ -23,9 +24,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Shortest Job First (SJF)"
+                android:background="@color/material_dynamic_neutral90"
+                android:text="Shortest Job First (SJF) Algorithm"
+                android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView3"
