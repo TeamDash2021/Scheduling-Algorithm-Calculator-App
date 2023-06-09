@@ -190,7 +190,7 @@ public class PriorityBasedShedulingSolution extends AppCompatActivity {
 
             // Create a TextView for numbering
             TextView numberTextView = new TextView(PriorityBasedShedulingSolution.this);
-            numberTextView.setText("                   "+(task.getArrivalTime()+turnaroundTime));
+            numberTextView.setText(""+(task.getArrivalTime()+turnaroundTime - task.getBurstTime())+"                  "+(task.getArrivalTime()+turnaroundTime));
             numberTextView.setTextColor(Color.BLACK);
             numberTextView.setGravity(Gravity.LEFT);
             numberTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);

@@ -9,6 +9,8 @@
 
     <TextView
         android:id="@+id/textView11"
+        android:background="#DCDCDC"
+        android:textColor="#B7000000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Gantt Chart"
@@ -34,6 +36,8 @@
 
     <TextView
         android:id="@+id/textView12"
+        android:background="#DCDCDC"
+        android:textColor="#B7000000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Solution Table"
@@ -61,7 +65,8 @@
                     <TextView
                         android:id="@+id/textView5"
                         android:textAlignment="center"
-                        android:background="@drawable/outline"
+                        android:background="@drawable/outline_colorfilled"
+                        android:textColor="@color/white"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -73,7 +78,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="@drawable/outline"
+                        android:background="@drawable/outline_colorfilled"
+                        android:textColor="@color/white"
                         android:text="Turnaround Time"
                         android:textAlignment="center"
                         android:textSize="16sp" />
@@ -83,7 +89,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="@drawable/outline"
+                        android:background="@drawable/outline_colorfilled"
+                        android:textColor="@color/white"
                         android:text="Waiting Time"
                         android:textAlignment="center"
                         android:textSize="16sp" />
@@ -434,6 +441,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/outline"
                 android:orientation="horizontal">
 
                 <TextView
@@ -454,6 +462,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/outline"
                 android:orientation="horizontal">
 
                 <TextView
