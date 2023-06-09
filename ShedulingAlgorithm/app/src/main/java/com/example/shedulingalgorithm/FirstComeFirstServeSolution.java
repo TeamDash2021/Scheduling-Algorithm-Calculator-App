@@ -170,7 +170,7 @@ public class FirstComeFirstServeSolution extends AppCompatActivity {
 
             TextView name = new TextView(FirstComeFirstServeSolution.this);
             name.setText(process.getProcessName());
-            name.setTextColor(Color.GRAY);
+            name.setTextColor(Color.DKGRAY);
             name.setGravity(Gravity.CENTER);
             name.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
 

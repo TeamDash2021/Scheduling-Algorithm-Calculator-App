@@ -19,12 +19,13 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:background="@drawable/button_design"
         android:text="First Come First Serve(FCFS)"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,12 +38,13 @@
         android:layout_width="match_parent"
         android:layout_height="40dp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sjf"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:background="@drawable/button_design"
         android:text="Shortest Job First(SJF)"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,9 +56,10 @@
         android:layout_width="match_parent"
         android:layout_height="40dp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/pbs"
         android:layout_width="350dp"
+        android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:background="@drawable/button_design"
         android:text="Priority Based Sheduling"
@@ -72,10 +75,11 @@
         android:layout_width="match_parent"
         android:layout_height="40dp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/rra"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:background="@drawable/button_design"
         android:text="Round Robin Algorithm"
         android:textSize="16sp"

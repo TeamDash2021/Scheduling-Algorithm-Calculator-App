@@ -180,7 +180,7 @@ public class ShortestJobFirstSolution extends AppCompatActivity {
 
                 // Create a TextView for numbering
                 TextView numberTextView = new TextView(ShortestJobFirstSolution.this);
-                numberTextView.setText("                          " + (shortestProcess.getArrivalTime() + turnaroundTime));
+                numberTextView.setText(""+(shortestProcess.getArrivalTime() + turnaroundTime - shortestProcess.getBurstTime())+"                  " + (shortestProcess.getArrivalTime() + turnaroundTime));
                 numberTextView.setTextColor(Color.BLACK);
                 numberTextView.setGravity(Gravity.LEFT);
                 numberTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);

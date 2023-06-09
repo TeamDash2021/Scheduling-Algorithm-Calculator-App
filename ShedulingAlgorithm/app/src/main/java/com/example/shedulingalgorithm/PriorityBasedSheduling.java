@@ -175,10 +175,10 @@ public class PriorityBasedSheduling extends AppCompatActivity {
                     if (pr.get(i).getText().toString().trim().isEmpty())
                     {
                         pr.get(i).setError("This can't be empty");
+                        count++;
                     }
                     else {
                         vd.setPriority(Double.parseDouble(pr.get(i).getText().toString()));
-                        count++;
                     }
                     values.add(vd);
                 }
